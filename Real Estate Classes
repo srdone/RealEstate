@@ -1,0 +1,14 @@
+Main
+-instantiate game
+
+RealEstateGame
+-The "game"	- handles game logic
+
+Player
+-The player of the game
+
+Post
+-The post for the square
+
+Fence
+-The fence connecting the posts

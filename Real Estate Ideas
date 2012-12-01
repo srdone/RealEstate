@@ -1,0 +1,21 @@
+Real Estate - Rough Requirements
+
+A fencing-in game of posts and fences. The winner is the one who fences in the most squares.
+
+The game board consists of squares arranged in a rectangular fashion. At the beginning, the squares just consist of four posts. Adjacent squares share their posts. There are no areas within the rectangle where there are missing squares.
+
+Each player takes a turn choosing where a fence should appear. When one box is completely fenced in (ie - each of the four sides has a fence going from one corner post to the other), the last person to have fenced it in wins that square and then gets another opportunity to choose a fence location. The game board updates to indicate which player won the square.
+
+Once all posts have the maxiumum number of fences possible coming from them (four in most cases, 3 if it is a post on the edge of the board, 2 if it is a corner post), the game is over and the player with the maximum number of fenced in squares wins.
+
+Some notes about how to know if the game is functioning correctly:
+
+1 - At the end, the fences will create a regular grid across the gameboard, with verices at the gameposts
+2 - At the end, there won't be any 1x1 squares that have not been fenced in.
+3 - There can be situations where one player gets many squares in a row if they are able to get the fences just right.
+4 - The game board should be planned so the number of squares is not divisible without remainder by the number of players. Otherwise a tie can result.
+5 - The players can put a fence anywhere horizontally or vertically between two posts. Watch for these problems:
+	-A fence cannot be placed on an edge pointing away from the rest of the game board
+	-A fence cannot be placed diagonally
+	-A fence cannot be removed once it is placed
+	-Only once fence per side (per node on the post) is allowed
