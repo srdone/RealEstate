@@ -4,7 +4,7 @@ A fencing-in game of posts and fences. The winner is the one who fences in the m
 
 The game board consists of squares arranged in a rectangular fashion. At the beginning, the squares just consist of four posts. Adjacent squares share their posts. There are no areas within the rectangle where there are missing squares.
 
-Each player takes a turn choosing where a fence should appear. When one box is completely fenced in (ie - each of the four sides has a fence going from one corner post to the other), the last person to have fenced it in wins that square and then gets another opportunity to choose a fence location. The game board updates to indicate which player won the square.
+Each player takes a turn choosing where a fence should appear. When one box is completely fenced in (ie - each of the four sides has a fence going from one corner post to the other), the last person to have fenced it in wins that square and then gets another opportunity to choose a fence location. The game board updates to indicate which player won the square. It should be very clear which enclosed squares belong to each player.
 
 Once all posts have the maxiumum number of fences possible coming from them (four in most cases, 3 if it is a post on the edge of the board, 2 if it is a corner post), the game is over and the player with the maximum number of fenced in squares wins.
 
@@ -19,3 +19,20 @@ Some notes about how to know if the game is functioning correctly:
 	-A fence cannot be placed diagonally
 	-A fence cannot be removed once it is placed
 	-Only once fence per side (per node on the post) is allowed
+
+
+First sprint:
+	-Post creation
+	-Fence creation
+	-Place all on gameboard
+
+Second sprint:
+	-Ability to click and place fence
+	-Player creation
+	-Player turns
+
+Third sprint:
+	-Game initiation
+	-Game logic
+	-Game winner
+	-Restart game

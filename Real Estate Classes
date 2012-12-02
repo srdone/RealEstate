@@ -3,12 +3,27 @@ Main
 
 RealEstateGame
 -The "game"	- handles game logic
+Player players[]
+Post posts[]
+
 
 Player
 -The player of the game
 
 Post
 -The post for the square
+is a filledOval
+has a Node
+has a Location
+
+Node
+-the connector on the post (most have 4, some 3, some 2)
+int holdingFenceId (or should it have a Fence?)
 
 Fence
+-is a filledRect
 -The fence connecting the posts
+
+GameBoard
+-Displays the various objects of posts and fences
+-Displays current score
