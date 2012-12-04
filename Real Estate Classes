@@ -1,29 +1,59 @@
 Main
 -instantiate game
+int numberOfPlayers
+RealEstateGame currentGame
+
 
 RealEstateGame
 -The "game"	- handles game logic
 Player players[]
 Post posts[]
+Player currentPlayer
+
+
+createGameBoard()
+nextPlayer()
+checkForClosure(Post posts[])
+isGameOver()
+gameOver()
 
 
 Player
 -The player of the game
+String playerName
+int playerId
+int score
+
+getters/setters
+
 
 Post
 -The post for the square
 is a filledOval
 has a Node
 has a Location
+Node nodes[]
+Location location
+
+Post(int numberOfNodes)
+
 
 Node
 -the connector on the post (most have 4, some 3, some 2)
-int holdingFenceId (or should it have a Fence?)
+Fence fence
 
-Fence
--is a filledRect
+setFence(Fence fence)
+getFence(Fence fence)
+
+Fence extends filledRect
 -The fence connecting the posts
+boolean filled
+
+setFilled
+isFilled
+
 
 GameBoard
 -Displays the various objects of posts and fences
 -Displays current score
+-holds buttons, etc. for game
